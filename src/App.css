@@ -1,0 +1,126 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+/* =========================
+   HTML & BODY
+========================= */
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  margin: 0;
+
+  font-family: Arial, sans-serif;
+
+  color: #2f241b;
+
+  background: #ffffff;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+button {
+  font-family: inherit;
+}
+
+
+/* =========================
+   IMAGES
+========================= */
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+a {
+  text-decoration: none;
+}
+
+
+/* =========================
+   APP
+========================= */
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+}
+
+
+/* =========================
+   COMMON SECTION
+========================= */
+
+.section {
+  width: 100%;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+
+
+/* =========================
+   SELECTION
+========================= */
+
+::selection {
+  background: #e6a23c;
+  color: white;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .app {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+}

@@ -1,0 +1,155 @@
+/* =========================
+   HIGHLIGHTS
+========================= */
+
+.highlights {
+  width: 100%;
+  padding: 32px 8%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 30px;
+
+  background: #2f241b;
+  color: white;
+}
+
+
+/* =========================
+   HIGHLIGHT ITEM
+========================= */
+
+.highlight-item {
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.highlight-icon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #e6a23c;
+  color: white;
+
+  font-size: 20px;
+}
+
+
+/* =========================
+   TEXT
+========================= */
+
+.highlight-item strong {
+  display: block;
+
+  margin-bottom: 4px;
+
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.highlight-item span {
+  display: block;
+
+  font-size: 12px;
+
+  color: #d6d6d6;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .highlights {
+    padding: 28px 6%;
+    gap: 18px;
+  }
+
+  .highlight-item {
+    gap: 10px;
+  }
+
+  .highlight-icon {
+    width: 42px;
+    height: 42px;
+
+    font-size: 18px;
+  }
+
+  .highlight-item strong {
+    font-size: 13px;
+  }
+
+  .highlight-item span {
+    font-size: 11px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 650px) {
+
+  .highlights {
+    grid-template-columns: 1fr;
+
+    padding: 35px 8%;
+
+    gap: 25px;
+  }
+
+  .highlight-item {
+    justify-content: flex-start;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .highlights {
+    padding: 30px 6%;
+  }
+
+  .highlight-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .highlight-item strong {
+    font-size: 14px;
+  }
+
+  .highlight-item span {
+    font-size: 11px;
+  }
+
+}

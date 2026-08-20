@@ -1,0 +1,249 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  z-index: 1000;
+
+  background: rgba(255, 250, 240, 0.96);
+
+  border-bottom: 1px solid rgba(47, 36, 27, 0.08);
+
+  backdrop-filter: blur(10px);
+}
+
+
+/* =========================
+   NAV CONTAINER
+========================= */
+
+.nav-container {
+  width: 90%;
+  max-width: 1200px;
+
+  height: 78px;
+
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* =========================
+   BRAND
+========================= */
+
+.brand {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+
+  cursor: pointer;
+}
+
+.brand img {
+  width: 52px;
+  height: 52px;
+
+  object-fit: contain;
+}
+
+.brand span {
+  font-size: 20px;
+  font-weight: 800;
+  letter-spacing: 1px;
+
+  color: #2f241b;
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.nav-links button {
+  padding: 10px 15px;
+
+  border: none;
+  background: transparent;
+
+  color: #2f241b;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  border-radius: 20px;
+
+  transition: 0.3s ease;
+}
+
+.nav-links button:hover {
+  color: #d28b24;
+  background: #fff1d7;
+}
+
+
+/* =========================
+   CONTACT BUTTON
+========================= */
+
+.nav-links .contact-nav {
+  margin-left: 8px;
+
+  padding: 11px 20px;
+
+  background: #e6a23c;
+
+  color: white;
+
+  border-radius: 25px;
+}
+
+.nav-links .contact-nav:hover {
+  background: #cf8d28;
+  color: white;
+}
+
+
+/* =========================
+   MENU BUTTON
+========================= */
+
+.menu-button {
+  display: none;
+
+  border: none;
+  background: transparent;
+
+  font-size: 28px;
+
+  color: #2f241b;
+
+  cursor: pointer;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .nav-container {
+    width: 88%;
+  }
+
+  .nav-links {
+    gap: 2px;
+  }
+
+  .nav-links button {
+    padding: 9px 10px;
+
+    font-size: 13px;
+  }
+
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .nav-container {
+    height: 70px;
+  }
+
+  .brand img {
+    width: 45px;
+    height: 45px;
+  }
+
+  .brand span {
+    font-size: 18px;
+  }
+
+  .menu-button {
+    display: block;
+  }
+
+
+  /* Mobile dropdown */
+
+  .nav-links {
+    position: absolute;
+
+    top: 70px;
+    left: 5%;
+    right: 5%;
+
+    padding: 15px;
+
+    display: none;
+    flex-direction: column;
+
+    align-items: stretch;
+
+    gap: 5px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links button {
+    width: 100%;
+
+    padding: 13px;
+
+    text-align: center;
+  }
+
+  .nav-links .contact-nav {
+    margin-left: 0;
+  }
+
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .brand span {
+    font-size: 16px;
+  }
+
+  .menu-button {
+    font-size: 25px;
+  }
+
+}
