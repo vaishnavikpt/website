@@ -1,4 +1,5 @@
 import "./About.css";
+import aboutImage from "../assets/image.jpeg";
 
 function About() {
   return (
@@ -17,8 +18,8 @@ function About() {
 
           <div className="about-pattern"></div>
 
-          <img
-  src="/src/assets/image.jpeg"
+ <img
+  src={aboutImage}
   alt="Samboy Food Products"
   className="about-photo"
 />

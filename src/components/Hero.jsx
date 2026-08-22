@@ -1,4 +1,5 @@
 import "./Hero.css";
+import heroImage from "../assets/image.jpeg";
 
 function Hero() {
   const scrollToProducts = () => {
@@ -16,14 +17,11 @@ function Hero() {
   return (
     <section id="home" className="hero">
 
-      {/* Decorative circles */}
       <div className="hero-decoration decoration-one"></div>
       <div className="hero-decoration decoration-two"></div>
 
-
       <div className="hero-container">
 
-        {/* LEFT SIDE */}
         <div className="hero-content">
 
           <p className="small-title">
@@ -40,8 +38,6 @@ function Hero() {
             to every moment. Discover the taste of Samboy.
           </p>
 
-
-          {/* BUTTONS */}
           <div className="hero-buttons">
 
             <button
@@ -63,20 +59,17 @@ function Hero() {
 
         </div>
 
-
-        {/* RIGHT SIDE */}
         <div className="hero-visual">
 
           <div className="hero-circle"></div>
 
           <div className="hero-snack-card">
 
-             <img
-  src="/src/assets/image.jpeg"
-  alt="Samboy Food Products"
-  className="hero-image"
-/>
-           
+            <img
+              src={heroImage}
+              alt="Samboy Food Products"
+              className="hero-image"
+            />
 
             <div className="floating-label">
               <strong>Samboy</strong>

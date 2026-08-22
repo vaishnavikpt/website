@@ -1,100 +1,123 @@
 import { useState } from "react";
 import "./Products.css";
 
+// Product Images
+import tomatoMurku from "../assets/products/tomato-murku.jpeg";
+import karakaddi from "../assets/products/karakaddi.jpeg";
+import tapiocaChips from "../assets/products/tapioca-chips.jpeg";
+import kerengChips from "../assets/products/kereng-chips.jpeg";
+import shev from "../assets/products/shev.jpeg";
+import nippat from "../assets/products/nippat.jpeg";
+import bananaChips from "../assets/products/banana-chips.jpeg";
+import kodubale from "../assets/products/kodubale.jpeg";
+import potatoSonte from "../assets/products/potato-soute.jpeg";
+import cornMixture from "../assets/products/corn-mixture.jpeg";
+import kerengSonte from "../assets/products/kerung-sonte.jpeg";
+import fryums from "../assets/products/fryums.jpeg";
+import garlicRing from "../assets/products/garlic-rings.jpeg";
+import pasta from "../assets/products/pasta.jpeg";
+import cheeseBall from "../assets/products/cheese-balls.jpeg";
+import threeD from "../assets/products/3d.jpeg";
+import onionRing from "../assets/products/onion-rings.jpeg";
+
+
+// PRODUCTS LIST
 const products = [
   {
     name: "Tomato Murku",
     category: "Traditional Snacks",
-    image: "/src/assets/products/tomato-murku.jpeg",
+    image: tomatoMurku,
   },
   {
     name: "Karakaddi",
     category: "Traditional Snacks",
-    image: "/src/assets/products/karakaddi.jpeg",
+    image: karakaddi,
   },
   {
     name: "Tapioca Chips",
     category: "Chips",
-    image: "/src/assets/products/tapioca-chips.jpeg",
+    image: tapiocaChips,
   },
   {
     name: "Kereng Chips",
     category: "Chips",
-    image: "/src/assets/products/kereng-chips.jpeg",
+    image: kerengChips,
   },
   {
     name: "Shev",
     category: "Savouries",
-    image: "/src/assets/products/shev.jpeg",
+    image: shev,
   },
   {
     name: "Nippat",
     category: "Traditional Snacks",
-    image: "/src/assets/products/nippat.jpeg",
-  },  
+    image: nippat,
+  },
   {
     name: "Banana Chips",
     category: "Chips",
-    image: "/src/assets/products/banana-chips.jpeg",
+    image: bananaChips,
   },
   {
     name: "Kodubale",
     category: "Traditional Snacks",
-    image: "/src/assets/products/kodubale.jpeg",
+    image: kodubale,
   },
   {
     name: "Potato Sonte",
     category: "Savouries",
-    image: "/src/assets/products/potato-soute.jpeg",
+    image: potatoSonte,
   },
   {
     name: "Corn Mixture",
     category: "Mixtures",
-    image: "/src/assets/products/corn-mixture.jpeg",
+    image: cornMixture,
   },
   {
     name: "Kereng Sonte",
     category: "Savouries",
-    image: "/src/assets/products/kerung-sonte.jpeg",
+    image: kerengSonte,
   },
   {
     name: "Fryums",
     category: "Modern Snacks",
-    image: "/src/assets/products/fryums.jpeg",
+    image: fryums,
   },
   {
     name: "Garlic Ring",
     category: "Modern Snacks",
-    image: "/src/assets/products/garlic-rings.jpeg",
+    image: garlicRing,
   },
   {
     name: "Pasta",
     category: "Modern Snacks",
-    image: "/src/assets/products/pasta.jpeg",
+    image: pasta,
   },
   {
     name: "Cheese Ball",
     category: "Modern Snacks",
-    image: "/src/assets/products/cheese-balls.jpeg",
+    image: cheeseBall,
   },
   {
     name: "3D",
     category: "Modern Snacks",
-    image: "/src/assets/products/3d.jpeg",
+    image: threeD,
   },
   {
     name: "Onion Ring",
     category: "Modern Snacks",
-    image: "/src/assets/products/onion-rings.jpeg",
+    image: onionRing,
   },
 ];
 
 
 function Products() {
 
+  // Active category
   const [activeCategory, setActiveCategory] = useState("All");
 
 
+  // Categories
   const categories = [
     "All",
     "Chips",
@@ -105,6 +128,7 @@ function Products() {
   ];
 
 
+  // Filter products
   const filteredProducts =
     activeCategory === "All"
       ? products
@@ -121,7 +145,6 @@ function Products() {
     >
 
       {/* SECTION HEADING */}
-
       <div className="products-heading">
 
         <div>
@@ -147,7 +170,6 @@ function Products() {
 
 
       {/* CATEGORY FILTERS */}
-
       <div className="category-buttons">
 
         {categories.map((category) => (
@@ -172,7 +194,6 @@ function Products() {
 
 
       {/* PRODUCT GRID */}
-
       <div className="product-grid">
 
         {filteredProducts.map(
@@ -184,7 +205,6 @@ function Products() {
             >
 
               {/* PRODUCT IMAGE */}
-
               <div className="product-image">
 
                 <img
@@ -200,7 +220,6 @@ function Products() {
 
 
               {/* PRODUCT INFORMATION */}
-
               <div className="product-info">
 
                 <span>

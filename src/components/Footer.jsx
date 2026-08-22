@@ -1,4 +1,5 @@
 import "./Footer.css";
+import logo from "../assets/logo.png";
 
 function Footer() {
 
@@ -16,10 +17,10 @@ function Footer() {
         {/* BRAND */}
         <div className="footer-brand">
 
-          <img
-            src="/src/assets/logo.png"
-            alt="Samboy Logo"
-          />
+        <img
+  src={logo}
+  alt="Samboy Logo"
+/>
 
           <p>
             Traditional taste.
