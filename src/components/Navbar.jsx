@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Navbar.css";
+import logo from "../assets/logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -22,7 +23,7 @@ function Navbar() {
           onClick={() => scrollToSection("home")}
         >
           <img
-            src="/src/assets/logo.png"
+            src={logo}
             alt="Samboy Logo"
           />
 
