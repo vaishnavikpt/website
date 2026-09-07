@@ -7,7 +7,7 @@ function About() {
 
       {/* SECTION TITLE */}
       <div className="section-tag">
-        ABOUT SAMBOY
+        ABOUT S.S.T Food Products
       </div>
 
 
